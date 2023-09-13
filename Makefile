@@ -1,7 +1,7 @@
-REPO_NAME = oer-template
-IMAGE_NAME = $(Test_OER)/docusaurus:latest
-CONTAINER_NAME = open-edu-hub-$(Test_OER)-bash
-OUTPUT_DIR = $$PWD/.output/$(Test_OER)
+REPO_NAME = Test_OER
+IMAGE_NAME = $(REPO_NAME)/docusaurus:latest
+CONTAINER_NAME = open-edu-hub-$(REPO_NAME)-bash
+OUTPUT_DIR = $$PWD/.output/$(REPO_NAME)
 
 .PHONY: all buildimg build serve run_bash enter_bash stop_bash clean cleanall
 
@@ -20,7 +20,7 @@ build: buildimg
 	docker run --rm -v $$PWD/:/content -v $(OUTPUT_DIR):/output $(IMAGE_NAME)
 
 serve:
-	@echo "Point your browser to http://localhost:8080/$(Test_OER)"
+	@echo "Point your browser to http://localhost:8080/$(REPO_NAME)"
 	@cd $(OUTPUT_DIR)/.. && python3 -m http.server 8080
 
 run_bash: buildimg
