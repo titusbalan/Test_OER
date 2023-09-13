@@ -49,7 +49,7 @@ docusaurus:
       - template-chapter-template-topic: /build/make_assets/chapters/template-chapter/template-topic/slides/_site
     config_meta:
       title: Tesr_oer
-      url: http://titusbalan.github.io/
+      url: https://titusbalan.github.io/
       baseUrl: /Test_oer/
       onBrokenLinks: warn
       onBrokenMarkdownLinks: warn
