@@ -48,9 +48,9 @@ docusaurus:
     static_assets:
       - template-chapter-template-topic: /build/make_assets/chapters/template-chapter/template-topic/slides/_site
     config_meta:
-      title: Template Repo
-      url: http://localhost/
-      baseUrl: /oer-template/
+      title: Tesr_oer
+      url: http://titusbalan.github.io/
+      baseUrl: /Test_oer/
       onBrokenLinks: warn
       onBrokenMarkdownLinks: warn
     config_socials:
