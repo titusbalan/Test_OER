@@ -50,7 +50,7 @@ docusaurus:
     config_meta:
       title: Test_OER
       url: https://titusbalan.github.io/
-      baseUrl: /Test_OER/
+      baseUrl: /
       onBrokenLinks: warn
       onBrokenMarkdownLinks: warn
     config_socials:
